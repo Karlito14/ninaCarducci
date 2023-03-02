@@ -10,10 +10,8 @@
 })(this, (function () { 'use strict';
 
   /**
-   * --------------------------------------------------------------------------
    * Bootstrap (v5.1.3): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
    */
   const MAX_UID = 1000000;
   const MILLISECONDS_MULTIPLIER = 1000;
@@ -26,13 +24,9 @@
 
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
   };
-  /**
-   * --------------------------------------------------------------------------
+  /*
    * Public Util Api
-   * --------------------------------------------------------------------------
    */
-
-
   const getUID = prefix => {
     do {
       prefix += Math.floor(Math.random() * MAX_UID);
